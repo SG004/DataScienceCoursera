@@ -3,7 +3,7 @@ jobs:
  build:
    docker:
      #pre-built images: https://circleci.com/docs/2.0/circleci-images/
-     - image: circleci/node:10-browsers
+     - image: circleci/python:3.7
    steps:
      - checkout
      - run:
@@ -19,4 +19,4 @@ jobs:
      - run:
          name: Running in a Unique Container
          command: |
-           node -v
+           python -v
