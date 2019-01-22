@@ -7,33 +7,6 @@ jobs:
      - run:
          name: Hello World
          command: |
-           echo 'Hellow World!'
+           echo 'Hello World!'
            echo 'This is the delivery pipeline'
- I-Have-Code:
-   docker:
-     - image: alpine:3.7
-   steps:
-     - checkout
-     - run:
-         name: Code Has Arrived
-         command: |
-           ls -al
-           echo  '^^^That should look familiar^^^'
- Run-With-Node:
-   docker:
-     - image: circleci/node:10-browsers
-   steps:
-     - run:
-         name: Running In a Container With NOde
-         command: |
-           node -v
- Now-Complete:
-   docker:
-     - image: alpine:3.7
-   steps:
-     - run:
-         name: Approval Complete
-         command: |
-           echo 'Do work once the approval has completed'
 
- 
